@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 @import AVFoundation;
-#import "./include/camera_avfoundation/CameraPermissionUtils.h"
+#import "CameraPermissionUtils.h"
 
 void FLTRequestPermission(BOOL forAudio, FLTCameraPermissionRequestCompletionHandler handler) {
   AVMediaType mediaType;
