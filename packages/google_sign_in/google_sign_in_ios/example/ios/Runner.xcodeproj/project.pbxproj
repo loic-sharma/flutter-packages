@@ -683,7 +683,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.flutter.plugins.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/Runner";
-				WARNING_CFLAGS = "-Wno-incomplete-umbrella";
+				WARNING_CFLAGS = (
+					"-Wno-incomplete-umbrella",
+					"-Wno-deprecated-declarations",
+				);
 			};
 			name = Debug;
 		};
@@ -702,7 +705,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.flutter.plugins.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/Runner";
-				WARNING_CFLAGS = "-Wno-incomplete-umbrella";
+				WARNING_CFLAGS = (
+					"-Wno-incomplete-umbrella",
+					"-Wno-deprecated-declarations",
+				);
 			};
 			name = Release;
 		};
