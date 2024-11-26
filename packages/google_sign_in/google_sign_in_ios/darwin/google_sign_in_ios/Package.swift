@@ -41,11 +41,11 @@ let package = Package(
         .process("Resources")
       ],
       cSettings: [
-        .headerSearchPath("include/google_sign_in_ios")
+        .headerSearchPath("include/google_sign_in_ios"),
 
         // Ignore AppAuth's warnings.
         // https://github.com/openid/AppAuth-iOS/issues/703
-        //.unsafeFlags(["-w"]),
+        .unsafeFlags(["-w"]),
       ]
     )
   ]
